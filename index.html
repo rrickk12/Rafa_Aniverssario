@@ -14,7 +14,7 @@
     }
 
     h1 {
-      font-size: 5em;
+      font-size: 4em;
       text-shadow: 2px 2px 10px pink;
       animation: colorChange 2s infinite alternate;
     }
@@ -25,7 +25,7 @@
     }
 
     .marquee {
-      font-size: 2em;
+      font-size: 1.5em;
       background-color: purple;
       color: white;
       padding: 10px;
@@ -40,8 +40,8 @@
     }
 
     .party-button {
-      font-size: 1.5em;
-      padding: 20px;
+      font-size: 1.2em;
+      padding: 15px;
       margin: 20px;
       background: lime;
       border: 5px dotted red;
@@ -56,18 +56,19 @@
     .hover-effect:hover {
       color: cyan;
       background-color: magenta;
-      font-size: 3em;
+      font-size: 1.5em;
       transition: all 0.3s ease-in-out;
     }
 
     .gif {
       margin: 20px auto;
       display: block;
-      width: 300px;
+      width: 80%;
+      max-width: 300px;
     }
 
     .message {
-      font-size: 1.5em;
+      font-size: 1.2em;
       color: white;
       text-shadow: 2px 2px 8px red;
       margin: 15px;
@@ -82,7 +83,8 @@
     .spanish-cat {
       display: block;
       margin: 20px auto;
-      width: 250px;
+      width: 80%;
+      max-width: 250px;
       border: 5px dashed orange;
       animation: wiggle 1s infinite ease-in-out;
     }
@@ -93,9 +95,32 @@
     }
 
     .caption {
-      font-size: 1.2em;
+      font-size: 1em;
       color: yellow;
       margin-top: -10px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 3em;
+      }
+
+      .marquee {
+        font-size: 1.2em;
+      }
+
+      .party-button {
+        font-size: 1em;
+        padding: 10px;
+      }
+
+      .message {
+        font-size: 1em;
+      }
+
+      .caption {
+        font-size: 0.8em;
+      }
     }
   </style>
 </head>
